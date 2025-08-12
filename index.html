@@ -799,17 +799,17 @@
           const [allProfiles, setAllProfiles] = useState({});
           
           const trainingModes = [
-              { key: 'game_mode_classic', value: 'Modo Clásico', image: './Imagenes/Clásico.png'},
-              { key: 'game_mode_timetrial', value: 'Modo Contrarreloj', image: './Imagenes/Contrarreloj.png'},
-              { key: 'game_mode_lives', value: 'Modo Vidas', image: './Imagenes/Vidas.png'},
-              { key: 'game_mode_levels', value: 'Por Niveles', image: './Imagenes/Niveles.png'},
-              { key: 'game_mode_streak', value: 'Racha de Aciertos', image: './Imagenes/Racha.png'},
-              { key: 'game_mode_exam', value: 'Examen Simulado', image: './Imagenes/Examen.png'},
+              { key: 'game_mode_classic', value: 'Modo Clásico', image: './Imagenes/Clásico.PNG'},
+              { key: 'game_mode_timetrial', value: 'Modo Contrarreloj', image: './Imagenes/Contrarreloj.PNG'},
+              { key: 'game_mode_lives', value: 'Modo Vidas', image: './Imagenes/Vidas.PNG'},
+              { key: 'game_mode_levels', value: 'Por Niveles', image: './Imagenes/Niveles.PNG'},
+              { key: 'game_mode_streak', value: 'Racha de Aciertos', image: './Imagenes/Racha.PNG'},
+              { key: 'game_mode_exam', value: 'Examen Simulado', image: './Imagenes/Examen.PNG'},
           ];
           const competitionModes = [
-              { key: 'game_mode_duel', value: 'Duelo', image: './Imagenes/Duelo.png' },
-              { key: 'game_mode_trivial', value: 'Trivial', image: './Imagenes/Trivia.png' },
-              { key: 'game_mode_marathon', value: 'Maratón', image: './Imagenes/Maratón.png' },
+              { key: 'game_mode_duel', value: 'Duelo', image: './Imagenes/Duelo.PNG' },
+              { key: 'game_mode_trivial', value: 'Trivial', image: './Imagenes/Trivia.PNG' },
+              { key: 'game_mode_marathon', value: 'Maratón', image: './Imagenes/Maratón.PNG' },
           ];
 
           const [category, setCategory] = useState('Entrenamiento');
@@ -916,7 +916,7 @@
           return (
               <div className="bg-brand-secondary p-6 rounded-xl shadow-lg">
                   {isModalOpen && blockToConfigure && ( <TopicSelectionModal block={blockToConfigure} existingSelection={configuredBlocks[blockToConfigure.id]?.topics} onSave={handleSaveTopicSelection} onClose={handleCloseModal} /> )}
-                  <div className="flex items-center mb-4"> <img src="./Imagenes/Config.png" alt="Game Setup" className="h-10 w-10 mr-3" /> <h3 className="text-xl font-bold text-brand-light">{t('game_setup_title')}</h3> </div>
+                  <div className="flex items-center mb-4"> <img src="./Imagenes/Config.PNG" alt="Game Setup" className="h-10 w-10 mr-3" /> <h3 className="text-xl font-bold text-brand-light">{t('game_setup_title')}</h3> </div>
                   <div className="space-y-4">
                       <div>
                          <label htmlFor="game-category" className="block text-sm font-medium text-brand-accent mb-1">{t('game_setup_category')}</label>
@@ -1084,7 +1084,7 @@
               )}
               <div className="flex items-center justify-between mb-4 flex-shrink-0">
                   <div className="flex items-center">
-                      <img src="./Imagenes/Juegos.png" alt="Active Games" className="h-10 w-10 mr-3" />
+                      <img src="./Imagenes/Juegos.PNG" alt="Active Games" className="h-10 w-10 mr-3" />
                       <h3 className="text-xl font-bold text-brand-light">{t('active_games_title')}</h3>
                   </div>
                   {activeGames.length > 0 &&
@@ -1172,7 +1172,7 @@
         return (
             <div className="bg-brand-secondary p-6 rounded-xl shadow-lg flex flex-col h-full">
                 <div className="flex items-center mb-4 flex-shrink-0">
-                    <img src="./Imagenes/Historia.png" alt="Game History" className="h-10 w-10 mr-3" />
+                    <img src="./Imagenes/Historia.PNG" alt="Game History" className="h-10 w-10 mr-3" />
                     <h3 className="text-xl font-bold text-brand-light">{t('history_title')}</h3>
                 </div>
                 {history && history.length > 0 ? (
@@ -1250,7 +1250,7 @@
                   )}
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
                        <div className="flex items-center">
-                          <img src="./Imagenes/Cargados.png" alt="Loaded Blocks" className="h-10 w-10 mr-3" />
+                          <img src="./Imagenes/Cargados.PNG" alt="Loaded Blocks" className="h-10 w-10 mr-3" />
                           <h3 className="text-xl font-bold text-brand-light">{t('block_management_title')}</h3>
                        </div>
                        <div className="flex items-center gap-2 flex-shrink-0">
@@ -1337,7 +1337,7 @@
               <div className="bg-brand-secondary p-6 rounded-xl shadow-lg flex flex-col">
                   <div className="flex items-center justify-between mb-4 flex-shrink-0">
                       <div className="flex items-center">
-                          <img src="./Imagenes/Creados.png" alt="Created Blocks" className="h-10 w-10 mr-3" />
+                          <img src="./Imagenes/Creados.PNG" alt="Created Blocks" className="h-10 w-10 mr-3" />
                           <h3 className="text-xl font-bold text-brand-light">{t('created_blocks_title')}</h3>
                       </div>
                       <a href="all-blocks.html" className="text-sm font-semibold bg-brand-tertiary/80 hover:bg-brand-tertiary text-brand-light py-1.5 px-3 rounded-md transition-colors">
@@ -1852,7 +1852,7 @@
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center space-x-3">
-                  <img src="./Imagenes/Playtest.png" alt="Playtest Logo" className="h-16 w-16" />
+                  <img src="./Imagenes/Playtest.PNG" alt="Playtest Logo" className="h-16 w-16" />
                   <h1 className="text-xl md:text-2xl font-bold tracking-wider text-brand-light">{t('header_title')} <span className="font-light text-brand-accent hidden sm:inline">{t('header_subtitle')}</span></h1>
                 </div>
                 <div className="flex items-center gap-4">
@@ -2049,7 +2049,7 @@
       const AuthForm = ({ title, children, onSubmit, buttonText, error, isLoading, bottomText, onBottomLinkClick, bottomLinkText}) => (
         <div className="w-full max-w-md bg-brand-secondary p-8 rounded-2xl shadow-2xl animate-fade-in">
             <div className="text-center mb-8">
-            <img src="./Imagenes/Playtest.png" alt="Playtest Logo" className="h-16 w-16 mx-auto" />
+            <img src="./Imagenes/Playtest.PNG" alt="Playtest Logo" className="h-16 w-16 mx-auto" />
             <h2 className="mt-4 text-3xl font-bold text-brand-light">{title}</h2>
             </div>
             <form onSubmit={onSubmit} className="space-y-6">
